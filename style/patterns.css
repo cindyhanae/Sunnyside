@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+:root{
+    --ff-default: 'Barlow', sans-serif;
+    --ff-highlight: 'Fraunces', serif;
+
+    --clr-primary-red: hsl(7, 99%, 70%);
+    --clr-primary-yellow: hsl(51, 100%, 49%);
+    --clr-primary-cyan: hsl(167, 40%, 24%);
+    --clr-primary-blue: hsl(198, 62%, 26%);
+    --clr-primary-ligh-cyan: hsl(168, 34%, 41%);
+
+    --clr-desaturated-blue: hsl(212, 27%, 19%);
+    --clr-vdark-blue: hsl(213, 9%, 39%);
+    --clr-dark-blue: hsl(232, 10%, 55%);
+    --clr-blue: hsl(210, 4%, 67%);
+    --clr-white: #fff;
+}
+
+html,
+body{
+    font-size: 62.5%;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* TYPOGRAPHY */
+p{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h1{
+    font-family: var(--ff-highlight);
+    font-weight: 900;
+    font-size: 5.4rem;
+}
+
+h2{
+    font-family: var(--ff-highlight);
+    font-weight: 900;
+    font-size: 3.2rem;
+}
