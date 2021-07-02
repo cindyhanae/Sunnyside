@@ -15,8 +15,8 @@
 </head>
 <body>
   <header>
-    <div class="header">
-      <img src="images/logo.svg" alt="">
+    <div class="container">
+      <img src="images/logo.svg" alt="" class="logo">
 
       <nav>
         <ul>
@@ -35,80 +35,86 @@
               Projects 
             </a>
           </li>
-          <li>
-            <a href="">
-              CONTACT
-            </a>
-          </li>
         </ul>
+
+        <button>Contact</button>
       </nav>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
-    <section>
+    <section class="hero">
       <h1>WE ARE CREATIVES</h1>
       <button>
-        <img src="images/icon-arrow-down.svg" alt="">
+        <a href="#transform"><img src="images/icon-arrow-down.svg" alt=""></a>
       </button>
     </section>
 
     <!-- TRANSFORM -->
-    <section>
-      <div class="container">
-        <div class="transform-img"></div>
-
-        <div class="txt">
-          <h2>Transform your brand</h2>
-          <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-          <button>LEARN MORE</button>
+    <section id="transform" class="transform">
+        <div class="transform-txt">
+          <div class="txt">
+            <h2>Transform your brand</h2>
+            <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <button class="learn learn-shadow-yellow">LEARN MORE</button>
+          </div>
         </div>
-      </div>
+
+        <div class="transform-img">
+          <img src="../images/desktop/image-transform.jpg" alt="">
+        </div>
     </section>
 
     <!-- STAND -->
-    <section>
-      <div class="container">
+    <section class="stand">
+      <div class="transform-img">
+        <img src="/images/desktop/image-stand-out.jpg" alt="">
+      </div>
+
+      <div class="transform-txt">
         <div class="txt">
           <h2>Stand out to the right audience</h2>
-          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
-          <button>LEARN MORE</button>
+          <p>Using a colaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+          <button class="learn learn-shadow-red">LEARN MORE</button>
         </div>
-
-        <div class="stand-img"></div>
       </div>
-    </section>
+
+      
+  </section>
 
     <!-- GRAPHIC AND PHOTO -->
     <section>
-      <div class="container">
-        <div>
-          <h2>Graphic Design</h2>
-          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients'attention.</p>
+      <div class="fruits">
+        <div class="graphic">
+          <div class="graphic-txt">
+            <h2>Graphic Design</h2>
+            <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients'attention.</p>
+          </div>
         </div>
 
-        <div>
-          <h2>Photography</h2>
-          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        <div class="photo">
+          <div class="photo-txt">
+            <h2>Photography</h2>
+            <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- TESTIMONIALS -->
     <section>
-      <div class="container">
+      <div class="testimonials">
         <h2>Client Testimonials</h2>
 
-        <div class="testimonials">
-          
+        <div class="clients">
           <!-- CLIENT 1-->
           <div class="client">
             <img src="images/image-emily.jpg" alt="">
             <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
             <div class="info">
-              <p>Emily R.</p>
-              <p>Marketing Director</p>
+              <p class="name">Emily R.</p>
+              <p class="job">Marketing Director</p>
             </div>
           </div>
 
@@ -117,8 +123,8 @@
             <img src="images/image-thomas.jpg" alt="">
             <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
             <div class="info">
-              <p>Thomas S.</p>
-              <p>Chief Operating Officer</p>
+              <p class="name">Thomas S.</p>
+              <p class="job">Chief Operating Officer</p>
             </div>
           </div>
 
@@ -127,8 +133,8 @@
             <img src="images/image-jennie.jpg" alt="">
             <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
             <div class="info">
-              <p>Jennie F.</p>
-              <p>Business Owner</p>
+              <p class="name">Jennie F.</p>
+              <p class="job">Business Owner</p>
             </div>
           </div>
 
@@ -136,13 +142,14 @@
       </div>
     </section>
 
-    <!-- IMAGES -->
+    <!-- GALLERY -->
     <section class="images">
-      <div class="image1"></div>
-      <div class="image2"></div>
-      <div class="image3"></div>
-      <div class="image4"></div>
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" class="image">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="" class="image">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="" class="image">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" class="image">
     </section>
+
 
   </main>
 
