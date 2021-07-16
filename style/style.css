@@ -149,7 +149,7 @@ header nav button:hover{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(/images/desktop/cherry.jpg);
+    background-image: url(/images/mobile/image-photography.jpg);
 }
 
 .photo{
@@ -159,7 +159,7 @@ header nav button:hover{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(/images/desktop/orange.jpg);
+    background-image: url(/images/mobile/image-graphic-design.jpg);
 }
 
 
