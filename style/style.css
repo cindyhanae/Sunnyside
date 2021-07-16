@@ -4,6 +4,10 @@ header{
     height: 13rem;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header .container{
@@ -30,6 +34,11 @@ header nav ul{
 header nav ul li a{
     color: white;
     letter-spacing: 0.1rem;
+    transition: .3s ease;
+}
+
+header nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.568);
 }
 
 header nav button{
@@ -47,6 +56,35 @@ header nav button:hover{
     color: var(--clr-white);
     background-color: rgba(255, 255, 255, 0.411);
 }
+
+/* HAMBURGUER */
+#burger{
+    cursor: pointer;
+    display: none;
+}
+
+#burger > span{
+    background-color: white;
+    width: 30px;
+    height: 4px;
+    display: flex;
+    margin: 5px;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+
+#burger.active #bar1{
+    transform: translateY(8px) rotate(45deg);
+}
+
+#burger.active #bar3{
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+#burger.active #bar2{
+    transform: translateX(30px);
+    opacity: 0;
+}
 /* HERO */
 .hero{
     background: url(../images/desktop/image-header.jpg);
@@ -54,6 +92,7 @@ header nav button:hover{
     background-size: cover;
     width: 100%;
     height: 100vh;
+    padding-top: 13rem;
     text-align: center;
 }
 
@@ -62,6 +101,24 @@ header nav button:hover{
     letter-spacing: 0.8rem;
     padding-top: 25rem;
     margin-bottom: 12.5rem;
+}
+
+.arrow:hover{
+    animation-name: arrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 /* TRANSFORM */
@@ -131,45 +188,30 @@ header nav button:hover{
     height: 79rem;
 }
 
-/* .graphic,
+.graphic,
 .photo{
     flex-basis: 100%;
     background-size: cover;
+    background-position: center;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-} */
+}
 
 
 .graphic{
-    flex-basis: 100%;
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-image: url(/images/mobile/image-photography.jpg);
-}
-
-.photo{
-    flex-basis: 100%;
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     background-image: url(/images/mobile/image-graphic-design.jpg);
 }
 
-
-.graphic-txt{
-    width: 50%;
-    margin-bottom: 6rem;
+.photo{
+    background-image: url(/images/mobile/image-photography.jpg);
 }
 
+
+.graphic-txt,
 .photo-txt{
-    width: 40%;
+    width: 50%;
     margin-bottom: 6rem;
 }
 
@@ -245,8 +287,13 @@ header nav button:hover{
     display: flex;
 }
 
+.img-a,
+.img-b{
+    display: flex;
+}
+
 .image{
-    width: 25%;
+    width: 50%;
 }
 
 /* FOOTER */
@@ -281,6 +328,121 @@ footer nav ul li a:hover{
 
 .social a img{
     margin-right: 3rem;
+}
+
+
+/* REPSONSIVE */
+@media (max-width: 1220px){
+    .graphic-txt,
+    .photo-txt{
+        width: 80%;
+    }
+}
+@media (max-width: 1050px){
+    .transform{
+        flex-direction: column-reverse;
+    }
+
+    .transform-txt{
+        padding: 15rem 0;
+    }
+
+    .txt{
+        width: 90%;
+        text-align: center;
+    }
+
+    .stand{
+        flex-direction: column;
+    }
+
+    .fruits{
+        display: block;
+        height: auto;
+    }
+
+    .graphic,
+    .photo{
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 4rem;
+    }
+
+    .clients{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client{
+        width: 90%;
+    }
+
+    .client:not(:last-child){
+        margin-bottom: 10rem;
+    }
+
+    .images{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px){
+    header nav{
+        background-color: var(--clr-blue-header);
+        width: 50%;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 13rem;
+        padding-bottom: 3.2rem;
+        transform: translateX(200%);
+        transition: .5s ease-out;
+    }
+
+    header .nav-burger.active{
+        transform: translateX(0);
+    }
+
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li{
+        margin-bottom: 3rem;
+    }
+
+    #burger{
+        display: block;
+    }
+}
+
+@media (max-width: 400px){
+    html,
+    body{
+        font-size: 55%;
+    }
+
+    .hero h1{
+        font-size: 4.5rem;
+    }
+
+    .transform-txt{
+        padding: 4rem 0;
+    }
+
+    .testimonials > h2{
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+
+    .clients{
+        margin: 4rem 0;
+    }
+
+    .client:not(:last-child){
+        margin-bottom: 4rem;
+    }
 }
 
 

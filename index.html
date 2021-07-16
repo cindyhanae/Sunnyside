@@ -18,7 +18,7 @@
     <div class="container">
       <img src="images/logo.svg" alt="Sunnyside logo" class="logo">
 
-      <nav>
+      <nav class="nav-burger">
         <ul>
           <li>
             <a href="#">
@@ -39,6 +39,13 @@
 
         <button>Contact</button>
       </nav>
+
+      <!-- HAMBURGUER -->
+      <div id="burger" onclick="toggle()">
+        <span id="bar1"></span>
+        <span id="bar2"></span>
+        <span id="bar3"></span>
+      </div>
     </div>
   </header>
 
@@ -46,7 +53,7 @@
     <!-- HERO -->
     <section class="hero">
       <h1>WE ARE CREATIVES</h1>
-      <button>
+      <button class="arrow">
         <a href="#transform"><img src="images/icon-arrow-down.svg" alt="Arrow icon"></a>
       </button>
     </section>
@@ -144,10 +151,14 @@
 
     <!-- GALLERY -->
     <section class="images">
-      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles" class="image">
-      <img src="images/desktop/image-gallery-orange.jpg" alt="Orange" class="image">
-      <img src="images/desktop/image-gallery-cone.jpg" alt="Cone" class="image">
-      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugarcubes" class="image">
+      <div class="img-a">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles" class="image">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="Orange" class="image">
+      </div>
+      <div class="img-b">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="Cone" class="image">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugarcubes" class="image">
+      </div>
     </section>
 
 
@@ -193,5 +204,8 @@
       </a>
     </div>
   </footer>
+
+  <!-- JS -->
+  <script src="/js/script.js"></script>
 </body>
 </html>
