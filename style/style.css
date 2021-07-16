@@ -131,7 +131,7 @@ header nav button:hover{
     height: 79rem;
 }
 
-.graphic,
+/* .graphic,
 .photo{
     flex-basis: 100%;
     background-size: cover;
@@ -139,15 +139,29 @@ header nav button:hover{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
+} */
+
 
 .graphic{
+    flex-basis: 100%;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background-image: url(/images/desktop/cherry.jpg);
 }
 
 .photo{
+    flex-basis: 100%;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background-image: url(/images/desktop/orange.jpg);
 }
+
 
 .graphic-txt{
     width: 50%;
