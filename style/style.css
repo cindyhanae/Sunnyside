@@ -333,8 +333,12 @@ footer nav ul li a:hover{
 }
 
 .attribution{
-    color: var(--clr-primary-light-cyan);
     margin-top: 3.2rem;
+}
+
+.attribution p{
+    color: var(--clr-primary-light-cyan);
+    margin-bottom: 0.8rem;
 }
 
 .attribution a{
