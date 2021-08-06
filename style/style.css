@@ -330,6 +330,20 @@ footer nav ul li a:hover{
     margin-right: 3rem;
 }
 
+.attribution{
+    color: var(--clr-primary-light-cyan);
+    margin-top: 3.2rem;
+}
+
+.attribution a{
+    color: var(--clr-primary-blue);
+    transition: color 0.3s ease;
+}
+
+.attribution a:hover{
+    color: var(--clr-white);
+}
+
 
 /* REPSONSIVE */
 @media (max-width: 1220px){
@@ -421,6 +435,10 @@ footer nav ul li a:hover{
     html,
     body{
         font-size: 55%;
+    }
+
+    .hero{
+        height: 90vh;
     }
 
     .hero h1{
