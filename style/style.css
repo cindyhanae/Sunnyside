@@ -450,6 +450,9 @@ footer nav ul li a:hover{
     .hero h1{
         font-size: 4.5rem;
     }
+    .hero button{
+        display: none;
+    }
 
     .transform-txt{
         padding: 4rem 0;
