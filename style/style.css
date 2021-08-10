@@ -339,6 +339,7 @@ footer nav ul li a:hover{
 .attribution p{
     color: var(--clr-primary-light-cyan);
     margin-bottom: 0.8rem;
+    font-size: 1.6rem;
 }
 
 .attribution a{
