@@ -415,7 +415,8 @@ footer nav ul li a:hover{
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: 13rem;
+        top: 8rem;
+        padding-top: 2.4rem;
         padding-bottom: 3.2rem;
         
         opacity: 0;
