@@ -417,11 +417,16 @@ footer nav ul li a:hover{
         right: 0;
         top: 13rem;
         padding-bottom: 3.2rem;
-        transform: translateX(200%);
-        transition: .5s ease-out;
+        
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(20px);
+        transition: .3s ease-out;
     }
 
     header .nav-burger.active{
+        opacity: 1;
+        pointer-events: all;
         transform: translateX(0);
     }
 
